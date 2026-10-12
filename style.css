@@ -467,7 +467,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3.5rem;
-  align-items: center;
+  align-items: start;
 }
 
 .about-copy h2 {
@@ -479,9 +479,28 @@ h3 {
   margin-top: 1rem;
 }
 
+.about-photo {
+  margin: 0;
+}
+
+.about-photo img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
+.about-photo figcaption {
+  margin-top: 0.6rem;
+  color: var(--ink-muted);
+  font-size: 0.82rem;
+}
+
 .metrics-grid {
+  grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 
@@ -693,6 +712,10 @@ h3 {
   .about-grid,
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .metrics-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
