@@ -155,9 +155,9 @@ h3 {
 }
 
 .header-inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
   gap: 1rem;
   height: 100%;
 }
@@ -208,7 +208,7 @@ h3 {
 
 @media (min-width: 821px) {
   .primary-nav {
-    flex: 1;
+    grid-column: 2;
   }
 
   .primary-nav .nav-list {
@@ -228,6 +228,8 @@ h3 {
 
 .menu-toggle {
   display: none;
+  grid-column: 3;
+  justify-self: end;
   width: 42px;
   height: 42px;
   border: 1px solid var(--line);
