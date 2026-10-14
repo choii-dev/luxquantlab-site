@@ -228,6 +228,7 @@ h3 {
 
 .header-home {
   justify-self: end;
+  width: fit-content;
 }
 
 .menu-toggle {
