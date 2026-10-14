@@ -226,6 +226,10 @@ h3 {
   color: var(--ink);
 }
 
+.header-home {
+  justify-self: end;
+}
+
 .menu-toggle {
   display: none;
   grid-column: 3;
