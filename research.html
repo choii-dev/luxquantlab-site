@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore Lux Quant Lab's quantitative trading research and monthly historical trading data."
+    />
+    <title>Algo Code - Black Widow | Lux Quant Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html#top" aria-label="Lux Quant Lab home">
+          <span class="brand-mark" aria-hidden="true">
+            <i data-lucide="hexagon"></i>
+          </span>
+          <span class="brand-copy">
+            <span class="brand-name">Lux Quant Lab</span>
+            <span class="brand-tag">Research</span>
+          </span>
+        </a>
+
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="index.html#top">About</a></li>
+            <li><a href="#trading-research" aria-current="page">Research</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <a class="btn btn-primary header-home" href="index.html#top">Return Home</a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="primary-nav"
+          aria-expanded="false"
+          aria-label="Open menu"
+        >
+          <i data-lucide="menu" class="icon-menu"></i>
+          <i data-lucide="x" class="icon-close"></i>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="research-page-section" id="trading-research">
+        <div class="container">
+          <header class="section-heading">
+            <p class="eyebrow">Research</p>
+            <h1>Algo Code - Black Widow</h1>
+          </header>
+
+          <section class="research-data" aria-label="Monthly trading data">
+            <p class="research-data-note">
+              * Real data (October 2025–September 2026)
+            </p>
+
+            <figure class="trading-terminal">
+              <figcaption class="terminal-titlebar">
+                Control Group Log
+              </figcaption>
+              <div class="terminal-output">
+                <p class="terminal-command">
+                  <span aria-hidden="true">&gt;</span> Model Code - Black Widow
+                </p>
+                <div
+                  class="terminal-table-wrap"
+                  tabindex="0"
+                  aria-label="Monthly trading data table; scroll horizontally to view all columns"
+                >
+                  <table class="terminal-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Year-Month</th>
+                        <th scope="col">Accuracy %</th>
+                        <th scope="col">Total P&amp;L %</th>
+                        <th scope="col">Avg P&amp;L %</th>
+                        <th scope="col">Avg Profit %</th>
+                        <th scope="col">Avg Loss %</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><th scope="row">2025-10</th><td>35%</td><td>-27.15%</td><td>-1.6%</td><td>8.7%</td><td>-7.2%</td></tr>
+                      <tr><th scope="row">2025-11</th><td>55%</td><td>9.64%</td><td>0.9%</td><td>6.6%</td><td>-6.0%</td></tr>
+                      <tr><th scope="row">2025-12</th><td>75%</td><td>348.06%</td><td>4.1%</td><td>7.3%</td><td>-5.4%</td></tr>
+                      <tr><th scope="row">2026-01</th><td>84%</td><td>173.73%</td><td>1.6%</td><td>5.6%</td><td>-19.2%</td></tr>
+                      <tr><th scope="row">2026-02</th><td>83%</td><td>153.00%</td><td>3.8%</td><td>9.6%</td><td>-23.5%</td></tr>
+                      <tr><th scope="row">2026-03</th><td>72%</td><td>150.83%</td><td>8.4%</td><td>12.9%</td><td>-3.4%</td></tr>
+                      <tr><th scope="row">2026-04</th><td>46%</td><td>-172.60%</td><td>-13.3%</td><td>7.4%</td><td>-31.0%</td></tr>
+                      <tr><th scope="row">2026-05</th><td>51%</td><td>53.76%</td><td>0.7%</td><td>6.8%</td><td>-5.6%</td></tr>
+                      <tr><th scope="row">2026-06</th><td>62%</td><td>51.70%</td><td>1.3%</td><td>7.1%</td><td>-7.8%</td></tr>
+                      <tr><th scope="row">2026-07</th><td>69%</td><td>59.77%</td><td>2.1%</td><td>5.1%</td><td>-5.7%</td></tr>
+                      <tr><th scope="row">2026-08</th><td>77%</td><td>113.60%</td><td>2.4%</td><td>5.3%</td><td>-7.6%</td></tr>
+                      <tr><th scope="row">2026-09</th><td>87%</td><td>121.54%</td><td>3.9%</td><td>6.8%</td><td>-15.2%</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </figure>
+
+            <section class="metric-definitions" aria-labelledby="definitions-title">
+              <h2 id="definitions-title">Definitions</h2>
+              <dl>
+                <div>
+                  <dt>Accuracy %</dt>
+                  <dd>Percentage of trades that closed with a profit.</dd>
+                </div>
+                <div>
+                  <dt>Total P&amp;L %</dt>
+                  <dd>Overall percentage profit or loss recorded for the month.</dd>
+                </div>
+                <div>
+                  <dt>Avg P&amp;L %</dt>
+                  <dd>Average percentage P&amp;L per trade across all trades.</dd>
+                </div>
+                <div>
+                  <dt>Avg Profit %</dt>
+                  <dd>Average percentage gain per profitable trade.</dd>
+                </div>
+                <div>
+                  <dt>Avg Loss %</dt>
+                  <dd>Average percentage loss per losing trade.</dd>
+                </div>
+              </dl>
+            </section>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="copyright">
+          © 2026 Lofilulu S.à r.l. All rights reserved.
+        </p>
+
+        <nav class="footer-nav" aria-label="Legal">
+          <a href="#privacy">Privacy Policy</a>
+        </nav>
+
+        <ul class="social-list">
+          <li>
+            <a href="https://www.linkedin.com/company/lux-quant-lab" aria-label="LinkedIn">
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M5.2 8.4H1.4V22h3.8V8.4ZM3.3 2C2.1 2 1.2 2.9 1.2 4s.9 2 2.1 2 2.1-.9 2.1-2S4.5 2 3.3 2ZM22 13.5c0-3.7-2-5.4-4.7-5.4-2.2 0-3.2 1.2-3.8 2V8.4H9.7V22h3.8v-6.7c0-1.8.3-3.6 2.6-3.6 2.2 0 2.2 2.1 2.2 3.7V22H22v-8.5Z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <section class="privacy-panel" id="privacy" hidden>
+      <div class="container">
+        <h2>Privacy Policy</h2>
+        <p>
+          Information entered in the contact form is not collected or stored by
+          this website.
+        </p>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.lucide) {
+          window.lucide.createIcons();
+        }
+
+        var toggle = document.querySelector(".menu-toggle");
+        var nav = document.getElementById("primary-nav");
+        var header = document.querySelector(".site-header");
+        var privacyLink = document.querySelector('.footer-nav a[href="#privacy"]');
+        var privacyPanel = document.getElementById("privacy");
+
+        function setMenu(open) {
+          toggle.setAttribute("aria-expanded", String(open));
+          toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+          nav.classList.toggle("is-open", open);
+          document.body.classList.toggle("nav-open", open);
+        }
+
+        toggle.addEventListener("click", function () {
+          setMenu(toggle.getAttribute("aria-expanded") !== "true");
+        });
+
+        nav.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            setMenu(false);
+          });
+        });
+
+        privacyLink.addEventListener("click", function (event) {
+          event.preventDefault();
+          privacyPanel.hidden = !privacyPanel.hidden;
+          if (!privacyPanel.hidden) {
+            privacyPanel.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+
+        window.addEventListener("scroll", function () {
+          header.classList.toggle("is-scrolled", window.scrollY > 8);
+        });
+      });
+    </script>
+  </body>
+</html>

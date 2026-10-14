@@ -5,7 +5,8 @@ quantitative trading, market behavior, strategy testing, and related projects.
 
 ## Project files
 
-- `index.html` — page content, navigation, contact form, and client-side interactions.
+- `index.html` — homepage content, navigation, contact form, and client-side interactions.
+- `research.html` — quantitative trading research page with monthly trading data.
 - `style.css` — responsive layout, visual styles, and theme colors.
 
 ## Preview locally
